@@ -6,8 +6,8 @@ services:
     env_file:
       - .env
     build: .
-    volumes:
-      - ./client:/static
+#    volumes:
+#      - ./client:/static
     container_name: SWMbti
     ports:
       - "80:80"
