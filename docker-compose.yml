@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: app:0.1
+    env_file:
+      - .env
+    build: .
+    volumes:
+      - ./client:/static
+    container_name: SWMbti
+    ports:
+      - "80:80"
+
